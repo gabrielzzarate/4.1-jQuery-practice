@@ -6,10 +6,16 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+* {
+	list-style: none;
+	text-decoration: none;
 }
 
 img {
@@ -17,3 +23,50 @@ img {
 }
 
 
+.accordion {
+	margin: 50px;
+	padding: 10px;
+	background-color: rgb(68, 68, 69);
+	border-radius: 3%;
+	.panel {
+		background-color: rgb(92, 94, 99);
+		padding: 0px;
+
+
+		&:hover {
+			background-color: rgb(119, 121, 130);
+		}
+	}
+	h1 {
+		text-color: white;
+		font-size: 20px;
+		border: 1px solid black;
+	}
+	li {
+		color: white;
+
+	}
+	
+	h1, ul {
+		padding: 10px;
+		width: 100%;
+
+	}
+	a {
+		display: block;
+		color: white;
+		
+		text-decoration: none;
+	}
+	
+
+}
+
+h1 {
+	display: inline-block;
+}
+
+
+.green {
+	background-color: rgb(148, 169, 60);
+}
